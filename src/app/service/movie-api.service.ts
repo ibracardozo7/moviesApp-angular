@@ -49,15 +49,19 @@ export class MovieApiService {
   fetchAnimationMovies(): Observable<any> {
     return this.http.get(`${this.baseUrl}/discover/movie?api_key=${this.apiKey}&with_genres=16`)
   }
+
   fetchComedyMovies(): Observable<any> {
     return this.http.get(`${this.baseUrl}/discover/movie?api_key=${this.apiKey}&with_genres=35`)
   }
+
   fetchDocumentaryMovies(): Observable<any> {
     return this.http.get(`${this.baseUrl}/discover/movie?api_key=${this.apiKey}&with_genres=99`)
   }
+  
   fetchScienceMovies(): Observable<any> {
     return this.http.get(`${this.baseUrl}/discover/movie?api_key=${this.apiKey}&with_genres=878`)
   }
+  
   fetchThrillerMovies(): Observable<any> {
     return this.http.get(`${this.baseUrl}/discover/movie?api_key=${this.apiKey}&with_genres=53`)
   }
